@@ -13,10 +13,16 @@
 
 
 <ul>
-{% for my_sub_item in my_list %}
+{% for item in my_list %}
+	{% if item == 123 %}
+		<li>{{ forloop.counter }}. {{ item|add:7}}</li>
+
+	{% elif  item == "abc" %}
+		<li>{{ forloop.counter }} {{This_is_true}}</li>
+	{% else %}
+		<li>{{ forloop.counter }}. {{ item }}</li>
 	
-	<li>{{ forloop.counter }}. {{ my_sub_item }}</li>
-	
+	{% endif %}
 
 {% endfor %}
 
