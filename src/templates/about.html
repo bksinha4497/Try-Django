@@ -1,13 +1,36 @@
 
 {% extends 'base.html' %}
 
-
-
 {% block content %}
 
-
 <h1> About Page </h1>
+<h3> {{title|capfirst|upper}}</h3>
 <p> This is a template </p>
 
+<p>
+	{{ my_text}} , {{my_number}} 
+	{{my_list}}
+</p>
 
-{% endblock %}
+<p>{{my_html|safe}} </p>
+<p>{{my_html|striptags|slugify}} </p>
+
+
+<ul>
+{% for item in my_list %}
+	{% if item == 123 %}
+		<li>{{ forloop.counter }}. {{ item|add:7}}</li>
+
+	{% elif  item == "abc" %}
+		<li>{{ forloop.counter }} {{This_is_true}}</li>
+	{% else %}
+		<li>{{ forloop.counter }}. {{ item }}</li>
+	
+	{% endif %}
+
+{% endfor %}
+
+</ul>
+
+
+{% endblock content %}
