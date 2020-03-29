@@ -83,3 +83,10 @@ def product_delete_view(request,id):
 	}
 	return render(request,"products/product_create.html",context)
 
+def product_query_set(request):
+	queryset=Product.objects.all()
+	context={
+		'object_list':queryset
+	}
+	return render(request,"products/query-set.html",context)
+
