@@ -63,10 +63,10 @@ def render_initial_data(request):
 	return render(request,"products/product_create.html",context)
 
 
-def dynamic_lookup_view(request,my_id):
+def dynamic_lookup_view(request,id):
 		
 	#obj=Product.objects.get(id=my_id)
-	obj=get_object_or_404(Product,id=my_id)
+	obj=get_object_or_404(Product,id=id)
 	context={
 		'obj':obj
 	}

@@ -29,7 +29,7 @@ urlpatterns = [
     path('product/create/',product_create_view),
     path('product/initial/',render_initial_data),
     path('product/rawcreate/',raw_product_create_view),
-    path('product/<int:my_id>/',dynamic_lookup_view,name='product'),
+    path('product/<int:id>/',dynamic_lookup_view,name='product-detail'),
     path('product/<int:id>/delete/',product_delete_view,name='product_delete'),
     path('product/query/',product_query_set),
     path('admin/', admin.site.urls),
