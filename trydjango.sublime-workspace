@@ -4,21 +4,44 @@
 		"selected_items":
 		[
 			[
-				"p",
-				"path"
+				"P",
+				"ProductForm"
 			],
 			[
-				"home",
-				"home_view"
+				"product",
+				"product_create_view"
 			],
 			[
-				"H",
-				"HttpResponse"
+				"pro",
+				"product_create_view"
+			],
+			[
+				"Pro",
+				"ProductForm"
+			],
+			[
+				"de",
+				"description"
+			],
+			[
+				"prod",
+				"product_detail_view"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"contents": "\n\n{% extends 'base.html' %}\n\n{% block content %}\n<form method=\"POST\"> {% csrf_token %}\n\t{{ form.as_p }}\n\n<input type=\"submit\" name=\"Submit\" value=\"Save\"/>\n</form>\n{% endblock content  %}\n",
+			"file": "/home/bksinha4497/Documents/virtualenv/try-django/src/products/templates/products/product_create.html",
+			"file_size": 187,
+			"file_write_time": 132298918146868711,
+			"settings":
+			{
+				"buffer_size": 187,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -31,14 +54,6 @@
 		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"Package Control: pa",
-				"Package Control: Remove Package"
-			],
-			[
-				"Package Control: in",
-				"Package Control: Install Package"
-			]
 		],
 		"width": 0.0
 	},
@@ -61,38 +76,30 @@
 	"expanded_folders":
 	[
 		"/home/bksinha4497/Documents/virtualenv/try-django",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src/templates",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src/trydjango"
+		"/home/bksinha4497/Documents/try-django"
 	],
 	"file_history":
 	[
+		"/home/bksinha4497/Documents/virtualenv/try-django/src/products/models.py",
 		"/home/bksinha4497/Documents/virtualenv/try-django/src/trydjango/urls.py",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src/templates/base.html",
+		"/home/bksinha4497/Documents/virtualenv/try-django/src/products/views.py",
+		"/home/bksinha4497/Documents/virtualenv/try-django/src/products/forms.py",
+		"/home/bksinha4497/Documents/virtualenv/try-django/src/products/templates/product/product_detail.html",
+		"/home/bksinha4497/Documents/virtualenv/try-django/src/pages/views.py",
+		"/home/bksinha4497/Documents/virtualenv/try-django/src/templates/product/detail.html",
 		"/home/bksinha4497/Documents/virtualenv/try-django/src/templates/about.html",
 		"/home/bksinha4497/Documents/virtualenv/try-django/src/templates/home.html",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src/pages/views.py",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src/trydjango/settings.py",
 		"/home/bksinha4497/Documents/virtualenv/try-django/src/templates/contact.html",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src/products/admin.py",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src/products/models.py",
-		"/home/bksinha4497/Documents/bbcnew-hub.txt",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src/db.sqlite3",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src/Products/admin.py",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src/trydjango.sublime-project",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src/Products/models.py",
-		"/home/bksinha4497/Documents/virtualenv/try-django/src/Products/apps.py",
-		"/media/bksinha4497/Data/AWS/Users/AWS_Server_Details.txt",
-		"/media/bksinha4497/Data/AWS/Users/AWS_IAM_USERS",
-		"/media/bksinha4497/Data/AWS/Users/root"
+		"/home/bksinha4497/Documents/virtualenv/try-django/src/templates/base.html",
+		"/home/bksinha4497/Documents/virtualenv/try-django/src/templates/navbar.html"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
-		"height": 104.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -119,14 +126,43 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/home/bksinha4497/Documents/virtualenv/try-django/src/products/templates/products/product_create.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								187,
+								187
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -163,7 +199,7 @@
 	"project": "trydjango.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -201,7 +237,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 208.0,
+	"side_bar_width": 206.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
