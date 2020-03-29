@@ -26,8 +26,8 @@ class ProductForm(forms.ModelForm):
 		]
 	def clean_title(self,*args,**kwargs):
 		title=self.cleaned_data.get('title')
-		if not 'CFE' in title:
-			raise forms.ValidationError('This is not a valid title')
+		# if not 'CFE' in title:
+		# 	raise forms.ValidationError('This is not a valid title')
 		return title
 
 
